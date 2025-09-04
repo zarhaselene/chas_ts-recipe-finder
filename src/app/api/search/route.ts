@@ -1,6 +1,6 @@
 import { mockSearchResponse } from "@/app/types/mockData";
-import type { SearchCriteria, SearchResponse, SearchResponseSchema } from "@/app/types/shared";
-import { z } from "zod";
+import { SearchCriteriaSchema } from "@/app/types/shared";
+import type { SearchResponse } from "@/app/types/shared";
 
 //exempel på struktur
 export async function POST(req: Request) {
