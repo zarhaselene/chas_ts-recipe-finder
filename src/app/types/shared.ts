@@ -13,6 +13,7 @@ export type Recipe = {
   ingredients: string[];
   steps: string[];
   timeMinutes: number;
+  tags: string[];
 };
 
 // Vad api:et svarar med
@@ -35,6 +36,7 @@ export const RecipeSchema = z.object({
   ingredients: z.array(z.string()),
   steps: z.array(z.string()),
   timeMinutes: z.number(),
+  tags: z.array(z.string()),
 });
 
 // Validerar hela responsen från api:et

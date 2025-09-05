@@ -14,6 +14,7 @@ export const mockSearchResponse: SearchResponse = {
       ingredients: ["tomato", "pasta", "olive oil"],
       steps: ["Boil pasta", "Cook sauce", "Mix together"],
       timeMinutes: 20,
+      tags: ["vegeratian", "vegan"],
     },
     {
       id: "2",
@@ -21,6 +22,7 @@ export const mockSearchResponse: SearchResponse = {
       ingredients: ["lettuce", "tomato", "cucumber", "olive oil"],
       steps: ["Wash veggies", "Chop", "Mix", "Serve"],
       timeMinutes: 10,
+      tags: ["vegetarian", "vegan"],
     },
     {
       id: "3",
@@ -28,6 +30,7 @@ export const mockSearchResponse: SearchResponse = {
       ingredients: ["eggs", "cheese", "butter", "salt"],
       steps: ["Beat eggs", "Melt butter", "Cook omelette", "Add cheese"],
       timeMinutes: 8,
+      tags: ["vegetarian"],
     },
     {
       id: "4",
@@ -35,6 +38,7 @@ export const mockSearchResponse: SearchResponse = {
       ingredients: ["pasta", "tomato", "cucumber", "feta cheese"],
       steps: ["Cook pasta", "Chop vegetables", "Mix with cheese", "Serve cold"],
       timeMinutes: 15,
+      tags: ["vegetarian"],
     },
     {
       id: "5",
@@ -47,6 +51,7 @@ export const mockSearchResponse: SearchResponse = {
         "Toast sandwich",
       ],
       timeMinutes: 12,
+      tags: ["vegetarian"],
     },
   ],
   createdAt: new Date().toISOString(),

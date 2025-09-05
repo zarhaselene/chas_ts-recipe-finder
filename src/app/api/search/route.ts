@@ -6,7 +6,9 @@ export async function POST(req: Request) {
     try {
         const body = SearchCriteriaSchema.parse(await req.json());
         const filteredResult = mockSearchResponse.results.filter(recipe => {
-            return body.ingredients.every(ing => recipe.ingredients.includes(ing));
+            const ingredientsMatch = body.ingredients.every(ing => recipe.ingredients.includes(ing));
+            const preferencesMatch = body.preferences.every(pref => recipe.tags.includes(pref));
+            return ingredientsMatch && preferencesMatch;
         });
         const response: SearchResponse = {
             ...mockSearchResponse,
