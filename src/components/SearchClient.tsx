@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import type { SearchCriteria, SearchResponse } from "@/app/types/shared";
 import { SearchResponseSchema } from "@/app/types/shared";
 import { search as doSearch } from "@/lib/client";
-import Loader from "./shared/Loader";
+import Spinner from "./shared/Spinner";
 
 type UiState = "idle" | "loading" | "ready" | "error";
 
@@ -82,7 +82,7 @@ export default function SearchClient() {
             className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
             disabled={uiState === "loading"}
           >
-            {uiState === "loading" ? <Loader /> : "Search"}
+            {uiState === "loading" ? <Spinner /> : "Search"}
           </button>
           <button
             type="button"
