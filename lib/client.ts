@@ -1,4 +1,4 @@
-import type { SearchCriteria, SearchResponse } from "../src/app/types/shared";
+import type { SearchCriteria, SearchResponse } from "@/app/types/shared";
 
 export async function search(
     criteria: SearchCriteria
